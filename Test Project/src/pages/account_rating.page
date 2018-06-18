@@ -1,0 +1,15 @@
+<apex:page controller="CustomController1">
+   <apex:form >
+      <apex:pageblock >
+         <apex:inputfield value="{!Acct.Account_Rating__c}"/>
+         <Apex:commandButton action="{!Save}" value="Save"/>   
+      
+      <apex:pageblocktable value="{!childOpps}" var="co">
+           <apex:column value="{!co.Name}"/>
+           <apex:column value="{!co.Amount}"/>
+           <apex:column value="{!co.StageName}"/>
+           <apex:column value="{!co.CloseDate}"/>
+      </apex:pageblocktable>
+      </apex:pageblock>
+   </apex:form>
+</apex:page>

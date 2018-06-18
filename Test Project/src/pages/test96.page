@@ -1,0 +1,22 @@
+<apex:page controller="SinglepicklistforMyAccount">
+    <apex:form >
+         <apex:pageblock title="Filter">
+             <apex:pageblocksection >
+                 <apex:outputPanel >
+                 <apex:selectList multiselect="true" value="{!string1}" size="1" required="true">
+                    <apex:selectOptions value="{!allCustomer}"/>
+                 </apex:selectList>
+                 <apex:selectList multiselect="true" value="{!string2}" size="1" required="true">
+                    <apex:selectOptions value="{!allCustomer2}"/>
+                 </apex:selectList>
+                     </apex:outputPanel>
+                   <apex:commandButton action="{!save}" value="go" reRender="CustomerInfo"/>
+              </apex:pageblocksection>
+         
+        <apex:pageBlocktable value="{!displayCustomer}"  var="c" id="CustomerInfo">
+           <apex:column value="{!c.name}"/>
+             </apex:pageBlocktable>
+        </apex:pageblock>
+        
+    </apex:form>
+</apex:page>
