@@ -1,5 +1,0 @@
-<apex:page controller="cWrapperExample">
-    <apex:form >
-    
-    </apex:form>
-</apex:page>
