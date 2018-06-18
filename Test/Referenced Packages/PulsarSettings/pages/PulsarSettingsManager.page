@@ -1,0 +1,10 @@
+<apex:page controller="LuminixPulsar.PulsarSettingsManager">
+  <apex:form >
+    <apex:sectionHeader title="Upload Pulsar settings from a file on your client computer"/>
+    <apex:pagemessages />
+    <apex:pageBlock >        
+        <apex:inputFile value="{!contentFile}" filename="{!nameFile}" />
+        <apex:commandButton action="{!processSettingsFile}" value="Install Settings" id="theButton"/>
+    </apex:pageBlock>       
+  </apex:form>
+</apex:page>

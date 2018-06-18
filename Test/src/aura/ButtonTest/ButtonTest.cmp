@@ -1,0 +1,6 @@
+<aura:component controller="getDatafromobject">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:attribute name="title" type="case[]" />
+    {!title}
+</aura:component>
