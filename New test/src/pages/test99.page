@@ -1,0 +1,9 @@
+<apex:page controller="Wrapper_demo">
+  <apex:pageBlock title="My test">
+    <apex:pageBlockTable value="{!Lstwrp}" var="c" title="dfdfdfdf">
+        <apex:column value="{!c.acc.name}"/>
+        <!--<apex:column value="{!c.con.name}"/>-->
+        system.debug('sjfdh');
+    </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>
