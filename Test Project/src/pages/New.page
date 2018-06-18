@@ -1,0 +1,4 @@
+<apex:page standardStylesheets="false" showheader="false" sidebar="false">
+<apex:stylesheet value="{ ($Resource.styles, 'Mystyle.css')}"/>
+<p> Welcome to the visualforce </p>
+</Apex:page>
