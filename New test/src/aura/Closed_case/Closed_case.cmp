@@ -1,4 +1,0 @@
-<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
-	<h2>Hello DreamForce!</h2>
-    <button class ="slds-button slds-button--brand">Show</button>
-</aura:component>

@@ -1,3 +1,0 @@
-<design:component >
-    <design:attribute name="title" label="Alert title" description="Test component"/>
-</design:component>
